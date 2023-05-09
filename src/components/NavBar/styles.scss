@@ -1,0 +1,35 @@
+.appBarWrapper {
+  box-shadow: none !important;
+  padding-top: 40px;
+
+  .linkNavWrapper {
+    gap: 20px;
+  }
+}
+
+.textDecoration {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 240px;
+  height: 48px;
+}
+
+@media only screen and (max-width: 600px) {
+  .appBarWrapper {
+    padding-top: 25px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+.color-unset {
+  color: unset;
+}

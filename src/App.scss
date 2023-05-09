@@ -1,0 +1,279 @@
+@import "./assets/styles/index";
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  background: #1E1E1E;
+  // background: #111110;
+  color: #cdcdcd;
+  font-family: "Montserrat";
+}
+
+.app-background {
+  min-height: 100vh;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/main-bg2.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.3;
+    /* Set the opacity of the pseudo-element */
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    background-image: url("./assets/images/1top-design.png"), url("./assets/images/bottom-home.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, -35% 17%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 50% auto, 50% auto;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 900px) {
+    &:after {
+      content: '';
+      background-position: top right, -35% 10%;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    &:after {
+      content: '';
+      background-image: url("./assets/images/1top-design.png");
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.page-height {
+  min-height: 40vh;
+}
+
+.d-block {
+  display: block;
+}
+
+.selected {
+  background-color: chocolate;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.selection-box-info {
+  margin-top: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.overflow-unset {
+  overflow: unset !important;
+}
+
+.ant-modal {
+  overflow: hidden;
+}
+
+.ant-layout-header {
+  background: transparent !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+textarea {
+  resize: none;
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-aligned-center {
+  display: flex;
+  align-items: center;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.white-space_pre-wrap {
+  white-space: pre-wrap;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-fit-content {
+  width: fit-content !important;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-unset {
+  min-height: unset !important;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}

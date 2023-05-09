@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.input-design {
+  width: calc(100% - 40px);
+  background: #30302c;
+  box-shadow: 0px 12px 15px rgb(0 0 0 / 65%);
+  border-radius: 12px;
+  padding: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cdcdcd;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cdcdcd;
+    opacity: 1; /* Firefox */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cdcdcd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #cdcdcd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+}
+.input-control {
+  margin-bottom: 25px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

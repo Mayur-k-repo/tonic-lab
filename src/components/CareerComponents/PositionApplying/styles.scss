@@ -1,0 +1,52 @@
+.positionApplyingCardWrapper {
+  background: #30302c;
+  box-shadow: inset 0px 25px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 32px;
+  padding: 40px;
+  text-align: center;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover,
+  &.iaActive {
+    box-shadow: 0px 24px 15px #000000;
+    .hover-round {
+      background: #f9de9c;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      filter: blur(86px);
+      position: absolute;
+      right: 10%;
+      top: 20%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .hover-round {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #cdcdcd;
+    position: relative;
+    &:after {
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #cdcdcd9e !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #cdcdcd !important;
+}

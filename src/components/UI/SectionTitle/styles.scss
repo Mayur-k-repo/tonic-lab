@@ -1,0 +1,35 @@
+.section-title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 85px;
+  position: relative;
+  z-index: 9;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .section-title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-title {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
